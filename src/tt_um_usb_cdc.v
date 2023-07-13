@@ -26,13 +26,13 @@ module tt_um_urish_usb_cdc (
 	
 	/* USB Serial */
    usb_cdc #(
-      .VENDORID(16'h16c0),
-      .PRODUCTID(16'h05e1),
+      .VENDORID(16'h1209),
+      .PRODUCTID(16'h5454),            // https://pid.codes/1209/5454/
       .IN_BULK_MAXPACKETSIZE('d8),
       .OUT_BULK_MAXPACKETSIZE('d8),
       .BIT_SAMPLES(BIT_SAMPLES),
       .USE_APP_CLK(0),
-      .APP_CLK_RATIO(BIT_SAMPLES*12/2)    // BIT_SAMPLES * 12MHz / 2MHz
+      .APP_CLK_RATIO(BIT_SAMPLES*12/2) // BIT_SAMPLES * 12MHz / 2MHz
    ) u_usb_cdc (
       .frame_o(),
       .configured_o(uio_out[7]),
