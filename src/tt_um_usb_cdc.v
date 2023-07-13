@@ -23,6 +23,7 @@ module tt_um_urish_usb_cdc (
 
 	wire usb_tx_en;
 	assign uio_oe = { 6'b110110, usb_tx_en, usb_tx_en };
+   assign { uio_out[5], uio_out[2] } = 0; // tie off unused outputs
 	
 	/* USB Serial */
    usb_cdc #(
