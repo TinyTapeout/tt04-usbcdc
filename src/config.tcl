@@ -57,3 +57,6 @@ set ::env(CLOCK_PORT) {clk}
 # don't use power rings or met5
 set ::env(DESIGN_IS_CORE) 0
 set ::env(RT_MAX_LAYER) {met4}
+
+# Increase target density to fit into a 1x2 tiles
+set ::env(PL_TARGET_DENSITY) "0.75"
