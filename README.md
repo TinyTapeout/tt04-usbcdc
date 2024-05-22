@@ -6,6 +6,12 @@ TinyTapeout is an educational project that aims to make it easier and cheaper th
 
 Go to https://tinytapeout.com for instructions!
 
+## USB CDC (Serial)
+
+A simple wrapper around [tinyfpga_bx_usbserial](https://github.com/davidthings/tinyfpga_bx_usbserial), implementing a USB CDC serial port on Tiny Tapeout.
+
+![Project in action](docs/terminal.png)
+
 ## How to change the Wokwi project
 
 Edit the [info.yaml](info.yaml) and change the wokwi_id to match your project.
